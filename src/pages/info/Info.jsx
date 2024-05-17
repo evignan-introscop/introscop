@@ -20,8 +20,7 @@ export default function Requisites() {
         <div className={s.container}>
           <div className={s.documents__inner}>
             <a
-            href="https://introscop.md/Nota explicativa 2022.PDF"
-              // href="/data/docs/Situatiile.financiare.2021.pdf"
+            href="https://introscop.md/uploads/docs/Situatiile.financiare.2021.pdf"
               download
               target="_blank"
               rel="noreferrer"
@@ -37,7 +36,7 @@ export default function Requisites() {
             </a>
 
             <a
-              href="/data/docs/6. STATUTUL Societatii pe actiuni INTROSCOP - 2021.pdf"
+              href="https://introscop.md/uploads/docs/6. STATUTUL Societatii pe actiuni INTROSCOP - 2021.pdf"
               download
               target="_blank"
               rel="noreferrer"
@@ -48,6 +47,70 @@ export default function Requisites() {
                 <img src={document} alt="document-icon" />
                 <p className={s.documents__name}>
                   Actele de constituire ale „INSTROSCOP” S.A.
+                </p>
+              </div>
+            </a>
+
+            <a
+              href="https://introscop.md/uploads/docs/Nota_explicativa_2022.pdf"
+              download
+              target="_blank"
+              rel="noreferrer"
+              className={s.documents__item}
+              data-aos="fade-up"
+            >
+              <div className={s.documents__item_wrap}>
+                <img src={document} alt="document-icon" />
+                <p className={s.documents__name}>
+                Nota explicativa 2022
+                </p>
+              </div>
+            </a>
+
+            <a
+              href="https://introscop.md/uploads/docs/Raport_audit_Audit_Sedan_2022.pdf"
+              download
+              target="_blank"
+              rel="noreferrer"
+              className={s.documents__item}
+              data-aos="fade-up"
+            >
+              <div className={s.documents__item_wrap}>
+                <img src={document} alt="document-icon" />
+                <p className={s.documents__name}>
+                Raport audit Audit Sedan 2022
+                </p>
+              </div>
+            </a>
+
+            <a
+              href="https://introscop.md/uploads/docs/Situații_financiare_01.01.2022-31.12.2022.pdf"
+              download
+              target="_blank"
+              rel="noreferrer"
+              className={s.documents__item}
+              data-aos="fade-up"
+            >
+              <div className={s.documents__item_wrap}>
+                <img src={document} alt="document-icon" />
+                <p className={s.documents__name}>
+                Raport audit Audit Sedan 2022
+                </p>
+              </div>
+            </a>
+
+            <a
+              href="https://introscop.md/uploads/docs/Situații_financiare_01.01.2022-31.12.2022.pdf"
+              download
+              target="_blank"
+              rel="noreferrer"
+              className={s.documents__item}
+              data-aos="fade-up"
+            >
+              <div className={s.documents__item_wrap}>
+                <img src={document} alt="document-icon" />
+                <p className={s.documents__name}>
+                Situații financiare 01.01.2022-31.12.2022
                 </p>
               </div>
             </a>

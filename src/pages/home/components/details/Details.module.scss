@@ -1,0 +1,221 @@
+@import "../../../../scss/index.scss";
+
+.details__wrapper {
+  position: relative;
+  background-image: url('../../../../assets/images/home/details-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100%;
+
+  @media screen and (max-width: 576px) {
+    background: linear-gradient(71deg, #5eaee3 0%, #2f8cca 100%);
+    margin-top: -1px;
+    opacity: 1;
+    height: auto;
+    width: 100%;
+  }
+}
+
+.details__section_wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.details__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: -1;
+
+  img {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 576px) {
+    display: none;
+    opacity: 0;
+  }
+}
+
+.details__bg_image {
+  display: inline-block;
+  object-fit: cover;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.details__bg_gradient {
+  background: #168edc;
+  opacity: 0.9;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  @media screen and (max-width: 576px) {
+    background: linear-gradient(103.19deg, #5eaee3 0%, #2f8cca 100%);
+    opacity: 1;
+    height: auto;
+    width: 100%;
+  }
+}
+
+.details__inner {
+  @extend .row;
+  flex-wrap: nowrap;
+  position: relative;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  margin-right: 10px;
+  top: 0;
+  left: 0;
+
+  @include media-breakpoint-down(sm) {
+    padding-top: calc(10px + (72 - 10) * ((100vw - 375px) / (1147 - 375)));
+    padding-bottom: calc(10px + (72 - 10) * ((100vw - 375px) / (1147 - 375)));
+  }
+
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+  }
+}
+
+.details__column {
+  @include make-col();
+  background-color: $color-white;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 0;
+  padding-right: 0;
+
+  @include media-breakpoint-down(sm) {
+    @include make-col(6);
+  }
+
+  @media screen and (max-width: 1200px) {
+    @include make-col(12);
+    --bs-gutter-y: 0.8rem;
+  }
+}
+
+.details__title {
+  @include text(700, 24px, 130%);
+  background-color: $color-white;
+  color: #168edc;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  justify-content: space-between;
+  padding: 25px 37px 25px 43px;
+
+  @media screen and (max-width: 1147px) {
+    font-size: calc(18px + (24 - 18) * ((100vw - 375px) / (1147 - 375)));
+  }
+
+  span {
+    display: inline-block;
+  }
+
+  .details__toggle {
+    display: none;
+
+    @media screen and (max-width: 576px) {
+      border-radius: 50%;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.09);
+      cursor: pointer;
+      display: block;
+      height: 24px;
+      position: relative;
+      width: 24px;
+      transition: all ease-in-out .5s;
+
+      img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 50;
+      }
+    }
+  }
+
+  .details__toggle_rotate {
+    position: relative;
+    left: -2%;
+    top: 5%;
+    transform: rotate(180deg);
+    transition: all ease-in-out .3s;
+  }
+}
+
+.details__content {
+  background-color: $color-white;
+  padding-left: 0;
+  display: block;
+  transition: all ease-in-out .3s;
+}
+
+.details__hide {
+  @media screen and (max-width: 576px) {
+    display: none;
+  }
+}
+
+.details__content_show {
+  display: block;
+}
+
+.details__item {
+  @include text(600, 16px, 125%);
+  color: #168edc;
+  display: flex;
+  font-family: "Segoe UI";
+  height: 100%;
+  padding-left: 26px;
+  padding-right: 28px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  img {
+    align-self: start;
+    display: inline-block;
+    margin: 6px 8px 0 0;
+  }
+
+  @media (max-width: 1147px) {
+    font-size: calc(14px + (16 - 14) * ((100vw - 375px) / (1147 - 375)));
+  }
+}
+
+.details__item_m {
+  background-color: rgba(234, 246, 255, 1);
+  @include text(600, 16px, 130%);
+  color: #168edc;
+  display: flex;
+  padding-left: 26px;
+  padding-right: 48px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  img {
+    align-self: start;
+    display: inline-block;
+    margin: 6px 8px 0 0;
+  }
+
+  @media (max-width: 1147px) {
+    font-size: calc(14px + (16 - 14) * ((100vw - 375px) / (1147 - 375)));
+  }
+}

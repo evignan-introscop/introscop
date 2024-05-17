@@ -1,0 +1,97 @@
+@import '../../../../scss/index.scss';
+
+.flexibility__wrapper {
+  position: relative;
+  margin-top: 40px;
+  .flexibility__bg_gradient {
+  height: 100%;
+  max-width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient( rgba(22, 125, 220, 0.9),rgba(68, 146, 197, 0.9),rgba(82, 164, 219, 1));
+  opacity: 0.8;
+}
+.flexibillity__section_wrapper {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+}
+.flexibility__bg {
+  @extend .row;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 436px;
+  padding: 0;
+  margin: 0;
+  z-index: -1;
+  @media screen and (max-width: 1440px) {
+    height: calc(630px + (436 - 630) * ((100vw - 375px) / (1440 - 375)));
+  }
+  img {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+.flexibility__inner {
+  @extend .row;
+  flex-direction: column
+}
+.flexibility__title {
+  @include make-col-ready();
+  @include make-col();
+  @include text(400, 50px, 105%);
+  color: $color-white;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 0 30px 0;
+  padding-top: 47px;
+  @include media-breakpoint-down(xl)  {
+    text-transform: uppercase;
+  }
+  @include media-breakpoint-down(xl)  {
+    font-size: calc(38px + (50 - 38) * ((100vw - 375px) / (1147 - 375)));
+    padding-top: calc(23px + (47 - 23) * ((100vw - 375px) / (1147 - 375)));
+  }
+}
+.flexibility__description {
+  @include make-col-ready();
+  @include make-col(8);
+  @include text(600, 18px, 130%);
+  text-align: justify;
+  color: $color-white;
+  font-family: 'Segoe UI';
+  font-weight: 600;
+  padding-bottom: 27px;
+  @include media-breakpoint-down(lg) {
+    @include make-col-ready();
+    @include make-col();
+  }
+  @include media-breakpoint-down(xl) {
+    font-size: calc(15px + (18 - 15) * ((100vw - 375px) / (1147 - 375)));
+    padding-bottom: calc(0px + (27 - 0) * ((100vw - 375px) / (1147 - 375)));
+  }
+}
+.flexibility__images {
+  @extend .row;
+}
+.flexibility__image {
+  @include make-col(6);
+  --bs-gutter-y: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 100%);
+  grid-template-rows: minmax(2, 160px);
+  column-gap: 20px;
+  img {
+    min-height: 163px;
+    width: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    padding-left: -5px;
+  }
+}

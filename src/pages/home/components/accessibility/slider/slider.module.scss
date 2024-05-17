@@ -1,0 +1,14 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.carousel {
+  .carousel__item {
+    min-height: 260px;
+    position: relative;
+    margin: 10px;
+
+    .slick-dots li button:before {
+      font-size: 20px;
+    }
+  }
+}

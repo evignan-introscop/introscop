@@ -1,0 +1,16 @@
+@mixin text($font-weight, $font-size, $line-height) {
+  font-style: normal;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+@mixin button($bg-color, $text-color, $font-size, $font-weight, $height, $line-height, $width) {
+  background-color: $bg-color;
+  color: $text-color;
+  font-style: normal;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  height: $height;
+  line-height: $line-height;
+  width: $width;
+}

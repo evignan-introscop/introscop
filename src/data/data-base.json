@@ -1,0 +1,36 @@
+{
+  "jobs" : [
+  {"vacancy": "Şef Secţie marketing",
+  "id": "1"},
+  {"vacancy": "Audit Intern",
+  "id": "2"},
+  {"vacancy": "Tehnician",
+  "id": "3"},
+  {"vacancy": "Specialist Vânzări",
+  "id": "4"},
+  {"vacancy": "Specialist Tehnologii",
+  "id": "5"},
+  {"vacancy": "Manager",
+  "id": "6"},
+  {"vacancy": "Director Central",
+  "id": "7"},
+  {"vacancy": "Auditor",
+  "id": "8"},
+  {"vacancy": "Specialist Marketing",
+  "id": "9"}
+],
+  "documents":[
+    {"title":"Informaţia privind activitatea Economico-Financiară"},
+    {"title":"Informaţia privind Adunările Generale ale Acţionarilor"},
+    {"title":"Actele de constituire ale „INSTROSCOP” S.A."},
+    {"title":"Informaţia privind deţinerile importante de acţiuni"},
+    {"title":"Informaţia despre evenimentele care afectează activitatea economico-financiară a societăţii"}
+  ],
+  "modalText": [
+    {"text": "Planificarea şi îndeplinirea strategiilor de social media", "id": 1},
+    {"text": "Dezvoltarea canalelor de comunicare în social media în concordanţă cu strategia de brand", "id": 2},
+    {"text": "Propunerea de oportunităţi noi pentru creşterea notorietăţii şi implicit creşterea vânzărilor", "id": 3},
+    {"text": "Monitorizarea constantă şi optimizarea campaniilor pentru atingerea obiectivelor", "id": 4},
+    {"text": "Menţinerea paginilor pe reţelele sociale (Facebook, Instagram)", "id": 5}
+  ]
+}

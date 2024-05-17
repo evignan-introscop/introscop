@@ -1,0 +1,199 @@
+@import '../../../../../scss/mixins.scss';
+
+.job__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    font-family: "Roboto";
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.job__modal_hide {
+    display: none;
+    opacity: 0;
+}
+
+.job__modal_wrapper {
+    background-color: #168EDC;
+    width: 70vw;
+    height: auto;
+    z-index: 1001;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 80%;
+
+    @media screen and (max-width: 576px) {
+        width: 100vw;
+        height: 100vh;
+        top: 1/2;
+    }
+}
+
+.job__modal_content {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 100%;
+
+    @media screen and (max-width: 576px) {
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+.job__modal_close_button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    right: 2%;
+    top: 3.5%;
+    position: absolute;
+
+    @media screen and (max-width: 576px) {
+        right: 4%;
+        top: 4%;
+    }
+
+}
+
+//   ===== texts =====>
+.title {
+    @include text(400, 20px, 130%);
+    color: #fff;
+    margin-top: 7%;
+
+    @media screen and (max-width: 1440px) {
+        font-size: calc(11px + (20 - 11) * ((100vw - 768px) / (1440 - 768)));
+    }
+
+    @media screen and (max-width: 576px) {
+        text-align: center;
+        font-size: calc(18px + (42 - 18) * ((100vw - 320px) / (768 - 320)));
+        margin-bottom: 7%;
+    }
+}
+
+.form__title {
+    @include text(400, 15px, 130%);
+    color: #fff;
+    margin-bottom: 3%;
+
+    @media screen and (max-width: 1440px) {
+        font-size: calc(9px + (15 - 9) * ((100vw - 768px) / (1440 - 768)));
+    }
+
+    @media screen and (max-width: 576px) {
+        text-align: center;
+        font-size: calc(12px + (30 - 12) * ((100vw - 320px) / (768 - 320)));
+    }
+}
+
+.description {
+    @include text(400, 15px, 100%);
+    color: #fff;
+    margin-top: 4%;
+    text-indent: 20px;
+
+    @media screen and (max-width: 1440px) {
+        font-size: calc(9px + (15 - 9) * ((100vw - 768px) / (1440 - 768)));
+    }
+
+    @media screen and (max-width: 576px) {
+        font-size: calc(12px + (32 - 12) * ((100vw - 320px) / (768 - 320)));
+    }
+}
+
+.left__side {
+    margin-top: 14%;
+    width: 40%;
+
+    @media screen and (max-width: 576px) {
+        width: 100%;
+    }
+}
+
+.right__side {
+    margin-top: 12%;
+    margin-bottom: 11%;
+    width: 50%;
+
+    @media screen and (max-width: 576px) {
+        margin-top: 8%;
+        width: 100%;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    color: #fff;
+
+    input {
+        @include text(400, 14px, 100%);
+        color: rgba(22, 142, 220, .5);
+        padding-top: 3%;
+        padding-bottom: 3%;
+        padding-left: 3%;
+        border: none;
+        margin-bottom: 4.5%;
+
+
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    input::placeholder {
+        color: rgba(22, 142, 220, .5);
+        @include text(400, 14px, 100%);
+
+        @media screen and (max-width: 1440px) {
+            font-size: calc(10px + (14 - 10) * ((100vw - 768px) / (1440 - 768)));
+        }
+
+        @media screen and (max-width: 576px) {
+            font-size: calc(12px + (30 - 12) * ((100vw - 320px) / (768 - 320)));
+        }
+    }
+
+    button {
+        @include text(400, 14px, 100%);
+        color: rgba(22, 142, 220, .5);
+        border: none;
+        background: #fff;
+        display: inline-block;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        margin: 0 auto;
+        width: 34%;
+
+        @media screen and (max-width: 1440px) {
+            font-size: calc(10px + (14 - 10) * ((100vw - 768px) / (1440 - 768)));
+        }
+
+        @media screen and (max-width: 576px) {
+            font-size: calc(12px + (30 - 12) * ((100vw - 320px) / (768 - 320)));
+        }
+    }
+}
+
+.separator {
+    display: none;
+
+    @media screen and (max-width: 576px) {
+        display: block;
+    }
+}

@@ -1,0 +1,149 @@
+@import '../../scss/mixins.scss';
+@import '../../scss/variables.scss'; 
+
+.requisites {
+  background-image: url('../../assets/images/requisites/requisites-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 40%;
+  min-height: auto;
+  max-width: 100%;
+  margin-bottom: 85px;
+  @media (max-width: 1146px) {
+    margin-bottom: calc(20px + (22 - 18) * ((100vw - 375px) / (1146 - 375)));
+  }
+  @media screen and (max-width: 576px) {
+    // display: none;
+    height: 100vh;
+    object-fit: cover;
+    background-position: 40%;
+
+  }
+}
+.requisites__container {
+  max-width: 1167px;
+  padding: 0 10px;
+  margin: 0 auto; 
+}
+.requisites__title {
+  @include text(700, 64px, 105%);
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  margin: 208px 10px 246px 107px;
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    margin: 208px 10px 246px 10px;
+  }
+  
+}
+.requisites__footer {
+  background-color: #168EDC;
+  padding: 26px 0 29px 0;
+
+  @media screen and (max-width: 576px) {
+    display: none;
+  }
+}
+.requisites__company_name {
+  @include text(700, 22px, 130%);
+  color: $color-white;
+  font-family: 'Segoe UI Bold';
+  margin: 0 0 10px 0;
+  @media (max-width: 1146px) {
+    font-size: calc(18px + (22 - 18) * ((100vw - 375px) / (1146 - 375)));
+  }
+  @media screen and (max-width: 576px) {
+    display: none;
+  }
+}
+.requisites__company_idno {
+  @include text(400, 22px, 130%);
+  color: $color-white;
+  font-family: 'Segoe UI Light';
+  margin: 0 0 10px 0;
+  @media (max-width: 1146px) {
+    font-size: calc(18px + (22 - 18) * ((100vw - 375px) / (1146 - 375)));
+  }
+  @media screen and (max-width: 576px) {
+    display: none;
+  }
+}
+.requisites__company_address {
+  @include text(400, 22px, 130%);
+  color: $color-white;
+  @media (max-width: 1146px) {
+    font-size: calc(18px + (22 - 18) * ((100vw - 375px) / (1146 - 375)));
+  }
+  @media screen and (max-width: 576px) {
+    display: none;
+  }
+  span {
+    font-family: 'Segoe UI Light';
+  }
+}
+// ===== requisites__currencies =====>
+.currency__container {
+  max-width: 1167px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.requisites__currencies {
+  background-color: $color-white;
+}
+.currency__title {
+  @include text(700, 24px, 130%);
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+  margin: 0 0 20px 0;
+  @media (max-width: 1147px) {
+    font-size: calc(20px + (24 - 20) * ((100vw - 375px) / (1147 - 375)));
+    text-align: center;
+  }
+  @media screen and (max-width: 576px) {
+    text-align: left;
+  }
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 85px;
+  @media (max-width: 1147px) {
+    margin-bottom: calc(25px + (85 - 25) * ((100vw - 375px) / (1147 - 375)));
+  }
+  thead > tr > th:nth-child(2) {
+      display: none;
+    }
+  th {
+    @include text(700, 24px, 130%);
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+    text-align: start;
+    text-transform: uppercase;
+    width: 40%;
+    @media screen and (max-width: 1147px) {
+      font-size: calc(12px + (24 - 12) * ((100vw - 375px) / (1147 - 375)));
+    }
+  }
+  td {
+    @include text(600, 24px, 130%);
+    text-transform: uppercase;
+    height: auto;
+    width: 60%;
+    @media screen and (max-width: 1147px) {
+      font-size: calc(12px + (24 - 12) * ((100vw - 375px) / (1147 - 375)));
+    }
+  }
+  th,
+  td {
+    border: 1px solid #000;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 25px;
+    padding-right: 25px;
+    @media screen and (max-width: 1147px) {
+      padding-left: calc(6px + (24 - 6) * ((100vw - 375px) / (1147 - 375)));
+      padding-right: calc(6px + (24 - 6) * ((100vw - 375px) / (1147 - 375)));
+    }
+  }
+}

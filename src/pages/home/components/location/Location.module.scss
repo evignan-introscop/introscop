@@ -1,0 +1,95 @@
+@import '../../../../scss/index.scss';
+
+.location {
+  @extend .row;
+  display: flex;
+  flex-direction: column;
+  padding-top: 14px;
+
+  @include media-breakpoint-down(sm) {
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.07);
+  }
+}
+
+.location__title {
+  @include make-col(12);
+  @include text(300, 45px, 160%);
+  color: #168EDC;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin-bottom: 44px;
+
+  @include media-breakpoint-down(xl) {
+    margin-bottom: calc(31px + (44 - 31) * ((100vw - 375px) / (1147 - 375)));
+  }
+}
+
+.location__map {
+  min-height: 345px;
+  max-width: 100%;
+  position: relative;
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .location__map_mark {
+    height: 24px;
+    width: 20px;
+    position: absolute;
+    left: 49.5%;
+    top: 29%;
+    transform: translate(-244%, 50%);
+  }
+}
+
+.location__map_link {
+  display: block;
+  cursor: pointer;
+}
+
+// ===== =====>
+.location__bottom {
+  display: none;
+  opacity: 0;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    opacity: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.location__bottom_title {
+  @include text(700, 16px, 160%);
+  color: #168EDC;
+  text-transform: uppercase;
+}
+
+.location__bottom_address,
+.location__bottom_phone {
+  @include text(700, 15px, 160%);
+  color: #168EDC;
+
+  @media screen and (max-width: 576px) {
+    color: #2B81BA;
+    font-size : calc(12px + (15 - 12) * ((100vw - 320px) / (576 - 320)));
+  }
+  a {
+    color: #168EDC;
+  }
+
+  span {
+    @include text(300, 15px, 160%);
+    @media screen and (max-width: 576px) {
+      color: #2B81BA;
+      font-size : calc(12px + (15 - 12) * ((100vw - 320px) / (576 - 320)));
+    }
+  }
+}

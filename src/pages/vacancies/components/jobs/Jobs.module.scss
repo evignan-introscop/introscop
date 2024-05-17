@@ -1,0 +1,100 @@
+@import '../../../../scss/mixins.scss';
+@import '../../../../scss/variables.scss';
+
+.jobs {
+  background: linear-gradient(93.19deg, #5EAEE3 0%, #2F8CCA 100%);
+  padding-top: 46px;
+  padding-bottom: 46px;
+  margin-top: 110px;
+  @media (max-width: 1166px) {
+    margin-top: calc(0px + (110 - 0) * ((100vw - 375px) / (1146 - 375)));
+    padding-top: calc(20px + (46 - 20) * ((100vw - 375px) / (1146 - 375)));
+    padding-bottom: calc(20px + (46 - 20) * ((100vw - 375px) / (1146 - 375)));
+  }
+}
+.jobs__container {
+  max-width: 1466px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.jobs__inner__title {
+  @include text(400, 50px, 130%);
+  color: $color-white;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin: 0 0 34px 0;
+  @media screen and (max-width: 768px) {
+    text-align: left;
+    text-transform: uppercase;
+  }
+  @media screen and (max-width: 1167px) {
+    font-size: calc(38px + (50 - 38) * ((100vw - 375px) / (1147 - 375)));
+  }
+}
+.jobs__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 0 10px;
+  @media screen and (max-width: 576px) {
+   display: grid;
+   justify-items: stretch;
+   grid-template-columns:
+  repeat(1, minmax(10px, 1fr));
+  }
+}
+.jobs__item {
+  @include text(700, 24px, 130%);
+  color: #2B81BA;
+  height: 100%;
+  flex: 0 0 360px;
+  font-family: -apple-system, 'Segoe UI Bold', sans-serif;
+  background-color: $color-white;
+  text-align: center;
+  padding: 20px 0;
+  border: none;
+}
+// ====== jobs modal info =====>
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  top: 50%;
+  position: fixed;
+  height: 100vh;
+  width: 1046px;
+  z-index: 3000;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.modal__wrapper {
+  background: rgba(43, 128, 186, 1);
+  box-shadow: 0px 0px 10px rgba(8, 63, 99, 0.16);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 92px;
+  padding-bottom: 92px;
+  position: relative;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    height: 100vh;
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: 576px) {
+    padding: 0;
+  }
+}

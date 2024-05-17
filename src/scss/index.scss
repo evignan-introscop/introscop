@@ -1,0 +1,68 @@
+@import './reset.scss';
+@import './variables.scss';
+@import './mixins.scss';
+@import './_grid.scss';
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+
+@font-face {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: url('../fonts/SegoeUI.woff2'),
+  url('../fonts/SegoeUI.woff');
+  }
+@font-face {
+  font-family: 'Segoe UI Bold';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: url('../fonts/SegoeUI-Bold.woff2'),
+  url('../fonts/SegoeUI-Bold.woff');
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url('../fonts/Montserrat/Montserrat-Regular.woff2'),
+    url('../fonts/Montserrat/Montserrat-Regular.woff');
+    }
+
+    @font-face {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-display: swap;
+      font-weight: 600;
+      src: url('../fonts/Montserrat/Montserrat-SemiBold.woff2'),
+      url('../fonts/Montserrat/Montserrat-SemiBold.woff');
+      }
+
+      @font-face {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-display: swap;
+        font-weight: 700;
+        src: url('../fonts/Montserrat/Montserrat-Bold.woff2'),
+        url('../fonts/Montserrat/Montserrat-Bold.woff');
+        }
+html,
+body {
+  box-sizing: border-box;
+  min-height: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+.container {
+  @include make-container();
+  @include make-max-width-container;
+}
+.row {
+  @include make-row();
+  & > * {
+    @include make-col-ready();
+  }
+}
+

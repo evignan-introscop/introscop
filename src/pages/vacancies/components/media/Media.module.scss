@@ -1,0 +1,186 @@
+@import '../../../../scss/mixins.scss';
+@import '../../../../scss/variables.scss';
+
+.media {
+  position: relative;
+}
+.media__section_wrapper {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+.media__container {
+  max-width: 1167px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.media__inner {
+  display: flex;
+  margin-bottom: 80px;
+  justify-content: space-between;
+  gap: 100px;
+  @media screen and (max-width: 576px) {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  @media screen and (max-width: 1024px) {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  @media screen and (max-width: 1167px) {
+    gap: calc(0px + (100 - 0) * ((100vw - 375px) / (1147 - 375)));
+    margin-bottom: calc(37px + (80 - 37) * ((100vw - 375px) / (1147 - 375)));
+  }
+}
+.media__inner_rev {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 20px 0;
+  flex-direction: row-reverse;
+  @media screen and (max-width: 1024px) {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 100px;
+  }
+  @media screen and (max-width: 1167px) {
+    gap: calc(22px + (100 - 22) * ((100vw - 375px) / (1147 - 375)));
+    margin-bottom: calc(37px + (80 - 37) * ((100vw - 375px) / (1147 - 375)));
+  }
+  @media screen and (max-width: 576px) {
+    gap: 0;
+  }
+}
+.media__title {
+  @include text(400, 50px, 130%);
+  font-family: 'Open Sans', sans-serif;
+  color: #2B81BA;
+  margin-left: 25px;
+  @media screen and (max-width: 1167px) {
+    font-size: calc(38px + (50 - 38) * ((100vw - 375px) / (1147 - 375)));
+  }
+  @media screen and (max-width: 576px) {
+    display: none;
+  }
+}
+.media__title_mob  {
+  display: none;
+  @media screen and (max-width: 576px) {
+    display: block;
+    @include text(400, 38px, 130%);
+    font-family: 'Open Sans', sans-serif;
+    color: #2B81BA;
+    margin-bottom: 22px;
+  }
+}
+.media__content,
+.media__content_rev {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.media__description_rev{
+  margin-right: 30px;
+  margin-left: 25px;
+  margin-top: 35px;
+  @media screen and (max-width: 1167px) {
+    margin-right: calc(0px + (100 - 0) * ((100vw - 375px) / (1147 - 375)));
+    margin-left: calc(0px + (25 - 0) * ((100vw - 375px) / (1147 - 375)));
+    margin-top: calc(0px + (35 - 0) * ((100vw - 375px) / (1147 - 375)));
+  }
+  .media__title_mob  {
+    display: none;
+    @media screen and (max-width: 576px) {
+      display: block;
+      @include text(400, 38px, 130%);
+      font-family: 'Open Sans', sans-serif;
+      color: #2B81BA;
+      margin-bottom: 22px;
+    }
+  }
+}
+.media__item {
+  @include text(700, 20px, 130%);
+  font-family: 'Segoe UI Bold';
+  color: #2B81BA;
+  display: flex;
+  margin: 0 0 8px 0;
+  @media screen and (max-width: 1167px) {
+    font-size: calc(14px + (18 - 14) * ((100vw - 375px) / (1147 - 375)));
+  }
+  img {
+    align-self: start;
+    display: inline-block;
+    margin: 8px 8px 0 0;
+  }
+}
+.media__watch_btn {
+  @include button(#2F8CCA, $color-white, 18px, 600, 48px, 130%, 322px);
+  background: linear-gradient(103.19deg, #5EAEE3 0%, #2F8CCA 100%);
+  border: none;
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  @media screen and (max-width: 576px) {
+    width: 100%;
+  }
+}
+.media__image {
+  flex: 0 0 50%;
+  position: relative;
+  min-height: 466px;
+  @media screen and (max-width: 576px) {
+    width: 100%;
+    min-height: 266px;
+  }
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+  }
+}
+.media__image_rev  {
+  flex: 0 0 40%;
+  position: relative;
+  min-height: 466px;
+  @media screen and (max-width: 576px) {
+    min-height: 266px;
+  }
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+  }
+}
+.media__inner_image {
+  right: 0%;
+  top: -10%;
+  position: absolute;
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+}
+.media__section {
+  position: relative;
+}
+.media__decor {
+  background: linear-gradient(0deg, #3689BE, #3689BE);
+  height: 200px;
+  flex: 0 0 463px;
+  width: 32%;
+  position: absolute;
+  bottom: -75px;
+  left: 0;
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}

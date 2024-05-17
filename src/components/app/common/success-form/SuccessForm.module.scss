@@ -1,0 +1,70 @@
+@import '../../../../scss/mixins.scss';
+@import '../../../../scss/variables.scss';
+
+.success__form {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 150;
+}
+
+.success__form_wrapper {
+  margin-bottom: 10%;
+}
+
+.success__form_backBtn {
+  @include button(none, $color-white, 18px, 600, 40px, 130%, 260px);
+  background: linear-gradient(103.19deg, #5EAEE3 0%, #2F8CCA 100%);
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  display: block;
+  font-family: -apple-system, 'Open Sans', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.success__form_image {
+  background: linear-gradient(103.19deg, #F4F9FC 0%, #D5E9F7 99.99%, #ACCFE7 100%, #DFEDF5 100%);
+  box-shadow: -2.64961px -2.64961px 6.35907px rgba(171, 220, 252, 0.1), 2.64961px 2.64961px 12.4106px rgba(0, 0, 0, 0.12), inset 1.05985px 1.05985px 5.29923px rgba(255, 255, 255, 0.13), inset -1.05985px -1.05985px 6.88899px rgba(0, 0, 0, 0.07);
+  border-radius: 50%;
+  height: 240px;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  max-width: 240px;
+
+  img {
+    display: inline-block;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.success__form_title {
+  @include text(700, 52px, 130%);
+  color: $color-blue;
+  font-family: 'Segoe UI Bold';
+  text-align: center;
+  text-shadow: 1.05985px 2.11969px 6.88899px rgba(0, 0, 0, 0.18);
+  margin: 0 0 15px 0;
+}
+
+.success__form_subtitle {
+  @include text(600, 13px, 130%);
+  color: #232;
+  font-family: 'Segoe UI';
+  text-align: center;
+  max-width: 220px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}

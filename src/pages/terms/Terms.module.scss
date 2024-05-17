@@ -1,0 +1,61 @@
+@import '../../../src/scss/mixins.scss';
+
+.terms {
+  font-family: 'Montserrat';
+  margin-top: 12%;
+  margin-bottom: 12%;
+  
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1150px;
+
+  @media screen and (max-width: 1440px) {
+    width: calc(300px + (1150 - 300) * ((100vw - 320px) / (1440 - 320)));
+  }
+}
+
+.title {
+  @include text(700, 20px, 130%);
+}
+
+.description {
+  @include text(400, 16px, 130%);
+  margin-top: 2%;
+}
+
+.subTitle {
+  @include text(600, 22px, 130%);
+  margin-top: 3%;
+}
+
+.text {
+  @include text(400, 22px, 130%);
+  margin-top: 2%;
+}
+
+.text__mark {
+  @include text(600, 22px, 130%);
+}
+
+.list__text {
+  margin-left: 3%;
+  list-style-type: disc;
+
+  @media screen  and (max-width: 576px) {
+    margin-left: 5%;
+  }
+}
+
+.list__text_minus {
+  margin-top: 2%;
+
+  @media screen  and (max-width: 576px) {
+    margin-left: 1%;
+  }
+}
+
+.linking {
+  text-decoration: underline;
+}

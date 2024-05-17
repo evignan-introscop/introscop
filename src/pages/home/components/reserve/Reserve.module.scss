@@ -1,0 +1,217 @@
+@import '../../../../scss/index.scss';
+
+.reserve {
+  background-color: $color-white;
+  margin-top: 85px;
+  margin-bottom: 85px;
+
+  @include media-breakpoint-down(xl) {
+    margin-top: calc(30px + (85 - 30) * ((100vw - 375px) / (1147 - 375)));
+    margin-bottom: calc(30px + (85 - 30) * ((100vw - 375px) / (1147 - 375)));
+  }
+}
+.reserve__inner {
+  @extend .row;
+  justify-content: space-between;
+
+  @include media-breakpoint-down(lg) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+}
+.reserve__form {
+  @include make-col(5);
+  background: #168EDC;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.16);
+  padding-top: 72px;
+  padding-bottom: 72px;
+
+  @include media-breakpoint-down(lg) {
+    @include make-col(12);
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  @include media-breakpoint-down(xl) {
+    padding-top: calc(0px + (72 - 0) * ((100vw - 375px) / (1147 - 375)));
+    padding-bottom: calc(0px + (72 - 0) * ((100vw - 375px) / (1147 - 375)));
+  }
+
+  .reserve__title {
+    @include text(700, 36px, 110%);
+    color: $color-white;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin: 0 0 27px 0;
+
+    @include media-breakpoint-down(lg) {
+      display: none;
+      font-size: 0px;
+    }
+
+    @include media-breakpoint-down(xl) {
+      font-size: calc(27px + (36 - 27) * ((100vw - 375px) / (1147 - 375)));
+    }
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    input {
+      border: none;
+      box-shadow: 0px 0px 10px rgba(8, 63, 99, 0.16);
+      display: inline-block;
+      width: 323px;
+      padding: 15px 25px;
+      margin: 0 0 14px 0;
+
+      &::placeholder {
+        @include text(400, 14px, 105%);
+        color: #168EDC;
+        opacity: 0.5;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    button {
+      @include button($color-white, #168EDC, 18px, 700, 48px, 105%, 323px);
+      background-color: transparent;
+      background-color: $color-white;
+      border: none;
+      box-shadow: 0px 0px 10px rgba(8, 63, 99, 0.16);
+      cursor: pointer;
+      display: inline-block;
+      font-family: 'Oswald', sans-serif;
+      text-transform: uppercase;
+
+      @include media-breakpoint-down(lg) {
+        background: linear-gradient(103.19deg, #5EAEE3 0%, #2F8CCA 100%);
+        color: $color-white;
+      }
+    }
+  }
+}
+.reserve__check {
+  text-align: center;
+  margin: 20px 0 0 0;
+
+  input {
+    box-shadow: 0px 0px 10px rgba(8, 63, 99, 0.16);
+  }
+
+  label {
+    @include text(300, 15px, 185%);
+    color: $color-white;
+    font-family: 'Segoe UI';
+    margin: 0 0 0 9px;
+
+    @media screen and (max-width: 576px) {
+      font-size : calc(11px + (15 - 11) * ((100vw - 320px) / (576 - 320)));
+    }
+
+    a {
+      color: $color-white;
+      font-family: 'Segoe UI';
+
+      @include media-breakpoint-down(lg) {
+        color: #2B81BA;
+      }
+    }
+
+    @include media-breakpoint-down(lg) {
+      color: #2B81BA;
+    }
+  }
+}
+.reserve__agree {
+  @include text(700, 15px, 105%);
+  color: $color-white;
+  text-decoration: underline;
+
+  @include media-breakpoint-down(lg) {
+    color: #2B81BA;
+  }
+}
+.reserve__location {
+  @include make-col(5);
+  margin-top: 75px;
+
+  @include media-breakpoint-down(lg) {
+    @include make-col(12);
+    margin-bottom: 30px;
+  }
+
+  @include media-breakpoint-down(xl) {
+    margin-top: calc(0px + (75 - 0) * ((100vw - 375px) / (1147 - 375)));
+  }
+}
+.reserve__title {
+  @include text(400, 45px, 110%);
+  color: #168EDC;
+  font-family: 'Oswald', sans-serif;
+  margin: 0 0 38px 0;
+
+  @include media-breakpoint-down(lg) {
+    color: #2B81BA;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  @include media-breakpoint-down(xl) {
+    font-size: calc(27px + (45 - 27) * ((100vw - 375px) / (1147 - 375)));
+    margin-bottom: calc(18px + (59 - 18) * ((100vw - 375px) / (1147 - 375)));
+
+  }
+}
+.reserve__description {
+  @include text(300, 18px, 170%);
+  color: #666;
+  font-family: 'Segoe UI';
+  margin-bottom: 59px;
+  text-align: justify;
+
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+  }
+
+  @include media-breakpoint-down(xl) {
+    margin-bottom: calc(0px + (59 - 0) * ((100vw - 375px) / (1147 - 375)));
+    font-size: calc(14px + (18 - 14) * ((100vw - 375px) / (1147 - 375)));
+  }
+}
+.reserve__address_title {
+  @include text(700, 16px, 110%);
+  color: #168EDC;
+  font-family: 'Segoe UI';
+  text-transform: uppercase;
+  margin: 0 0 13px 0;
+
+  @include media-breakpoint-down(sm) {
+    display: none;
+    font-size: 0px;
+  }
+}
+.reserve__address_city,
+.reserve__address_phone {
+  @include text(400, 16px, 130%);
+  color: #1793CB;
+  font-family: 'Segoe UI';
+  margin: 0 0 8px 0;
+
+  a {
+    color: #1793CB;
+  font-family: 'Segoe UI';
+  }
+
+  @include media-breakpoint-down(sm) {
+    display: none;
+    font-size: 0px;
+  }
+}

@@ -1,0 +1,74 @@
+@import '../../../../scss/index.scss';
+
+.accessibility__section {
+
+  @media screen and (max-width: 576px) {
+    display: block;
+    background: linear-gradient(103.19deg, #5EAEE3 0%, #2F8CCA 100%);
+    opacity: 1;
+  }
+}
+
+.accessibility {
+  @extend .row;
+  padding-top: 85px;
+  padding-bottom: 85px;
+  text-align: justify;
+
+  @media screen and (max-width: 576px) {
+
+    color: $color-white;
+  }
+
+  @include media-breakpoint-down(xl) {
+    padding-top: calc(25px + (85 - 25) * ((100vw - 375px) / (1147 - 375)));
+    padding-bottom: calc(10px + (85 - 10) * ((100vw - 375px) / (1147 - 375)));
+  }
+}
+
+.accessibility__wrapper {
+  @extend .row;
+  @include make-col(8);
+
+  @include media-breakpoint-down(lg) {
+    @include make-col();
+  }
+}
+
+.accessibility__title {
+  @include text(400, 50px, 105%);
+  color: #168EDC;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 20px;
+
+  @include media-breakpoint-down(sm) {
+    color: $color-white;
+    text-transform: uppercase;
+  }
+
+  @media screen and (max-width: 1147px) {
+    font-size: calc(38px + (50 - 38) * ((100vw - 375px) / (1147 - 375)));
+  }
+}
+
+.accessibility__description {
+  @include text(600, 18px, 130%);
+  color: #232323;
+  font-weight: normal;
+  font-family: 'Segoe UI';
+  margin-bottom: 34px;
+
+  @include media-breakpoint-down(sm) {
+    color: $color-white;
+  }
+
+  @media (max-width: 1147px) {
+    font-size: calc(15px + (18 - 15) * ((100vw - 375px) / (1147 - 375)));
+    margin-bottom: calc(25px + (34 - 25) * ((100vw - 375px) / (1147 - 375)));
+  }
+}
+
+.accessibility__slider {
+  @extend .row;
+  margin: 0 auto;
+}

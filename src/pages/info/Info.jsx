@@ -19,7 +19,7 @@ export default function Requisites() {
       <article className={s.documents}>
         <div className={s.container}>
           <div className={s.documents__inner}>
-            <a
+           {/* <a
             href="https://introscop.md/uploads/docs/Situatiile.financiare.2021.pdf"
               download
               target="_blank"
@@ -33,7 +33,7 @@ export default function Requisites() {
                   Informaţia privind activitatea Economico-Financiară
                 </p>
               </div>
-            </a>
+           </a> */}
 
             <a
               href="https://introscop.md/uploads/docs/6. STATUTUL Societatii pe actiuni INTROSCOP - 2021.pdf"
@@ -51,7 +51,7 @@ export default function Requisites() {
               </div>
             </a>
 
-            <a
+           {/* <a
               href="https://introscop.md/uploads/docs/Nota_explicativa_2022.pdf"
               download
               target="_blank"
@@ -65,7 +65,7 @@ export default function Requisites() {
                 Nota explicativa 2022
                 </p>
               </div>
-            </a>
+          </a> 
 
             <a
               href="https://introscop.md/uploads/docs/Raport_audit_Audit_Sedan_2022.pdf"
@@ -113,7 +113,7 @@ export default function Requisites() {
                 Situații financiare 01.01.2022-31.12.2022
                 </p>
               </div>
-            </a>
+            </a> */}
 
             {/* <a
               href="https://introscop.md/uploads/docs/Situații_financiare_01.01.2022-31.12.2022.pdf"
@@ -130,6 +130,70 @@ export default function Requisites() {
                 </p>
               </div>
             </a> */}
+
+            <a
+              href="https://introscop.md/uploads/docs/Nota explicativa la Situatia financiara 2023.pdf"
+              download
+              target="_blank"
+              rel="noreferrer"
+              className={s.documents__item}
+              data-aos="fade-up"
+            >
+              <div className={s.documents__item_wrap}>
+                <img src={document} alt="document-icon" />
+                <p className={s.documents__name}>
+                Nota explicativa 2023
+                </p>
+              </div>
+            </a>
+            
+            <a
+              href="https://introscop.md/uploads/docs/Raport audit INTROSCOP 2023.pdf"
+              download
+              target="_blank"
+              rel="noreferrer"
+              className={s.documents__item}
+              data-aos="fade-up"
+            >
+              <div className={s.documents__item_wrap}>
+                <img src={document} alt="document-icon" />
+                <p className={s.documents__name}>
+                Raport audit 2023
+                </p>
+              </div>
+            </a>
+
+            <a
+              href="https://introscop.md/uploads/docs/Raportul Conducerii INTROSCOP SA 2023.pdf"
+              download
+              target="_blank"
+              rel="noreferrer"
+              className={s.documents__item}
+              data-aos="fade-up"
+            >
+              <div className={s.documents__item_wrap}>
+                <img src={document} alt="document-icon" />
+                <p className={s.documents__name}>
+                Raportul Conducerii 2023
+                </p>
+              </div>
+            </a>
+
+            <a
+              href="https://introscop.md/uploads/docs/Situatiile financiare 2023.pdf"
+              download
+              target="_blank"
+              rel="noreferrer"
+              className={s.documents__item}
+              data-aos="fade-up"
+            >
+              <div className={s.documents__item_wrap}>
+                <img src={document} alt="document-icon" />
+                <p className={s.documents__name}>
+                Situatiile financiare 2023
+                </p>
+              </div>
+            </a>
 
           </div>
         </div>

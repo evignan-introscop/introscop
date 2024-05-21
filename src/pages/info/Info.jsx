@@ -115,6 +115,22 @@ export default function Requisites() {
               </div>
             </a>
 
+            {/* <a
+              href="https://introscop.md/uploads/docs/Situații_financiare_01.01.2022-31.12.2022.pdf"
+              download
+              target="_blank"
+              rel="noreferrer"
+              className={s.documents__item}
+              data-aos="fade-up"
+            >
+              <div className={s.documents__item_wrap}>
+                <img src={document} alt="document-icon" />
+                <p className={s.documents__name}>
+                Situații financiare 01.01.2022-31.12.2022
+                </p>
+              </div>
+            </a> */}
+
           </div>
         </div>
       </article>

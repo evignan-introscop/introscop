@@ -131,7 +131,7 @@ export default function Requisites() {
               </div>
             </a> */}
 
-            <a
+           {/* <a
               href="https://introscop.md/uploads/docs/Nota explicativa la Situatia financiara 2023.pdf"
               download
               target="_blank"
@@ -191,6 +191,71 @@ export default function Requisites() {
                 <img src={document} alt="document-icon" />
                 <p className={s.documents__name}>
                 Situatiile financiare 2023
+                </p>
+              </div>
+            </a> */}
+
+
+             <a
+              href="https://introscop.md/uploads/docs/Nota explicativa la situatia financiara 2024.pdf"
+              download
+              target="_blank"
+              rel="noreferrer"
+              className={s.documents__item}
+              data-aos="fade-up"
+            >
+              <div className={s.documents__item_wrap}>
+                <img src={document} alt="document-icon" />
+                <p className={s.documents__name}>
+                Nota explicativa 2024
+                </p>
+              </div>
+            </a>
+            
+            <a
+              href="https://introscop.md/uploads/docs/Raport audit_INTROSCOP_2024.pdf"
+              download
+              target="_blank"
+              rel="noreferrer"
+              className={s.documents__item}
+              data-aos="fade-up"
+            >
+              <div className={s.documents__item_wrap}>
+                <img src={document} alt="document-icon" />
+                <p className={s.documents__name}>
+                Raport audit 2024
+                </p>
+              </div>
+            </a>
+
+            <a
+              href="https://introscop.md/uploads/docs/Raportul conducerii 2024.pdf"
+              download
+              target="_blank"
+              rel="noreferrer"
+              className={s.documents__item}
+              data-aos="fade-up"
+            >
+              <div className={s.documents__item_wrap}>
+                <img src={document} alt="document-icon" />
+                <p className={s.documents__name}>
+                Raportul Conducerii 2024
+                </p>
+              </div>
+            </a>
+
+            <a
+              href="https://introscop.md/uploads/docs/Situații financiare 2024.pdf"
+              download
+              target="_blank"
+              rel="noreferrer"
+              className={s.documents__item}
+              data-aos="fade-up"
+            >
+              <div className={s.documents__item_wrap}>
+                <img src={document} alt="document-icon" />
+                <p className={s.documents__name}>
+                Situatiile financiare 2024
                 </p>
               </div>
             </a>
